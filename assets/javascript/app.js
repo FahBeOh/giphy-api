@@ -30,7 +30,7 @@ function toggleGiph() {
 function giphyDisplay() {
     var tvShow = $(this).attr("name");
     var apiKey = "eAFKeOjlTldUvzjggovAVPjRKowwoyai";
-    var queryURL = "http://api.giphy.com/v1/gifs/search?limit=10&q=" + tvShow + "&api_key=" + apiKey;
+    var queryURL = "https://api.giphy.com/v1/gifs/search?limit=10&q=" + tvShow + "&api_key=" + apiKey;
     $.ajax({
         url: queryURL,
         method: "GET",
